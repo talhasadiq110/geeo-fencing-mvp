@@ -56,3 +56,16 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
 }
 
+
+tasks.named("preBuild") {
+}
+
+
+tasks.named("preBuild") {
+}
+
+// >> GIT_ALL_IN_ONE:preBuildStartApi// << GIT_ALL_IN_ONE:preBuildStartApi
+
+tasks.named("preBuild") {
+    dependsOn(rootProject.tasks.named("startApi"))
+}
